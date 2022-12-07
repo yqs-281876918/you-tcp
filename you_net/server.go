@@ -44,7 +44,6 @@ func (server *Server) listen(listener *net.TCPListener) {
 			fmt.Printf("accept connection error : %v\n", err)
 			continue
 		}
-		//消息回显
 		server.handleConn(conn)
 	}
 }
